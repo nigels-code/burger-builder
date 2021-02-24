@@ -16,19 +16,6 @@ class BurgerBuilder extends Component {
     error: false
   };
 
-  // componentDidMount() {
-  //   axios
-  //     .get(
-  //       "https://burger-730bf-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json"
-  //     )
-  //     .then((response) => {
-  //       this.setState({ ingredients: response.data });
-  //     })
-  //     .catch((error) => {
-  //       this.setState({ error: true });
-  //     });
-  // }
-
   purchaseHandler = () => {
     this.setState({ purchasing: true });
   };
