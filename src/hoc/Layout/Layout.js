@@ -1,34 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import classes from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 
-class Layout extends Component {
-  state = {
-    showSideDrawer: false
+const Layout = (props) => {
+  const [sideDrawerisVisible, setSideDrawerIsVisible] = useState(false);
+
+  const sideDrawerClosedHandler = () => {
+    setSideDrawerIsVisible(false);
   };
 
-  sideDrawerClosedHandler = () => {
-    this.setState({ showSideDrawer: false });
+  const sideDrawerToggleHandler = () => {
+    setSideDrawerIsVisible(!sideDrawerisVisible);
   };
 
-  sideDrawerToggleHandler = () => {
-    this.setState((prevState) => {
-      return { showSideDrawer: !prevState.showSideDrawer };
-    });
-  };
-
-  render() {
-    return (
-      <>
-        <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
-        <SideDrawer
-          open={this.state.showSideDrawer}
-          closed={this.sideDrawerClosedHandler}
-        />
-        <main className={classes.Content}>{this.props.children}</main>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <Toolbar drawerToggleClicked={sideDrawerToggleHandler} />
+      <SideDrawer open={sideDrawerisVisible} closed={sideDrawerClosedHandler} />
+      <main className={classes.Content}>{props.children}</main>
+    </>
+  );
+};
 export default Layout;
