@@ -4,7 +4,7 @@ I wrote this while following Maximilian Schwarzmuller's "React - The Complete Gu
 
 A web application for configuring and ordering a hamburger.
 
-Technologies used: React, Firebase, Javascript, HTML, CSS
+Technologies used: React, Firebase (Realtime Database), Javascript, HTML, CSS
 
 ## Installation
 ```sh
