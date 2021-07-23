@@ -4,7 +4,10 @@ I wrote this while following Maximilian Schwarzmuller's "React - The Complete Gu
 
 A web application for configuring and ordering a hamburger.
 
-Technologies used: React, Firebase (Realtime Database), Javascript, HTML, CSS
+Technologies used: React, Firebase (Realtime Database), Javascript, HTML, CSS.
+
+I have set up a CI/CD pipeline between Github and Netlify.  
+Open <https://burgerbuilderxx.netlify.app/> to see a production version of this project.
 
 ## Installation
 ```sh
