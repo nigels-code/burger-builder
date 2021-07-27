@@ -6,8 +6,8 @@ A web application for configuring and ordering a hamburger.
 
 Technologies used: React, Firebase (Realtime Database), Javascript, HTML, CSS.
 
-I have set up a CI/CD pipeline between Github and Netlify.  
-Open <https://burgerbuilderxx.netlify.app/> to see this project in production.
+I have connected this repo to Netlify.  
+Open <https://burgerbuilderxx.netlify.app/> to see the project in production.
 
 ## Installation
 ```sh
