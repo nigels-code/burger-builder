@@ -2,7 +2,7 @@
 
 I wrote this while following Maximilian Schwarzmuller's "React - The Complete Guide" course.
 
-A Single Page Application developed with React, Redux, Firebase (Realtime Database), Javascript, HTML, CSS.
+A Single Page Application developed with React, Redux, Firebase (Realtime Database), JavaScript, HTML, CSS.
 
 I have connected this repo to Netlify.  
 Open <https://burgerbuilderxx.netlify.app/> to see the project in production.
